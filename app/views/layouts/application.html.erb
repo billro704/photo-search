@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhotoSearch</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">	
+	<header class="clearfix">
+		<h1>Photo Search <span>Test Jibe </span></h1>
+
+		<form action="?" method="get">
+			<input type="text" name="q" placeholder="Search Instagram photos..." autofocus/>
+		</form>
+
+	</header>
+	<div class="main">
+		
+		<%= yield %>
+
+	</div><!-- /main -->
+</div><!-- /container -->
+
+
+</script>
+</body>
+</html>
